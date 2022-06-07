@@ -1,6 +1,6 @@
 # Hello Word
 
-My solution to the log levels exercise.
+My solution to the Hello Word exercise.
 
 [My profile Exercism](https://exercism.org/profiles/stefanilima)
 

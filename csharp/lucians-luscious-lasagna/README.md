@@ -1,6 +1,6 @@
 # Lucian's Luscious Lasagna
 
-My solution to the log levels exercise.
+My solution to the Lucian's Luscious Lasagna exercise.
 
 [My profile Exercism](https://exercism.org/profiles/stefanilima)
 

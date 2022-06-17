@@ -6,6 +6,10 @@ My solution to the Cars, Assemble! exercise.
 
 [Exercism Link](https://exercism.org/tracks/csharp/exercises/cars-assemble)
 
+### Run the tests
+
+To run the tests use Visual Studio or the `dotnet test` command.
+
 ## Instructions
 
 In this exercise you'll be writing code to analyze the production of an assembly line in a car factory. The assembly line's speed can range from 0 (off) to 10 (maximum).

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberAnalysis", "PhoneNumberAnalysis\PhoneNumberAnalysis.csproj", "{5316E477-EE16-4E82-AFF7-4D9E956AD4D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberAnalysisTests", "PhoneNumberAnalysisTests\PhoneNumberAnalysisTests.csproj", "{D07008AA-7A31-458F-94DB-3EF437247220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5316E477-EE16-4E82-AFF7-4D9E956AD4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5316E477-EE16-4E82-AFF7-4D9E956AD4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5316E477-EE16-4E82-AFF7-4D9E956AD4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5316E477-EE16-4E82-AFF7-4D9E956AD4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07008AA-7A31-458F-94DB-3EF437247220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07008AA-7A31-458F-94DB-3EF437247220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07008AA-7A31-458F-94DB-3EF437247220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07008AA-7A31-458F-94DB-3EF437247220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A12ACE3C-0E88-4E74-91D6-0910C12B9DAD}
+	EndGlobalSection
+EndGlobal

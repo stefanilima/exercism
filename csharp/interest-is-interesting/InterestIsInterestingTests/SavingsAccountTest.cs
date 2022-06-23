@@ -35,5 +35,23 @@ namespace InterestIsInterestingTests
         {
             Assert.Equal(2.475f, SavingsAccount.InterestRate(5001));
         }
+
+        [Fact]
+        public void InterestWithLessBalanceThousand()
+        {
+            Assert.Equal(1.00375m, SavingsAccount.Interest(200.75m));
+        }
+
+        [Fact]
+        public void AnnualBalanceUpdateWithLessBalanceThousand()
+        {
+            Assert.Equal(201.75375m, SavingsAccount.AnnualBalanceUpdate(200.75m));
+        }
+
+        [Fact]
+        public void YearsBeforeDesiredBalance()
+        {
+            Assert.Equal(14, SavingsAccount.YearsBeforeDesiredBalance(200.75m, 214.88m));
+        }
     }
 }

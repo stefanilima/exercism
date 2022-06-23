@@ -16,20 +16,25 @@ namespace InterestIsInteresting
             var taxaJuros = InterestRate(balance);
             decimal juros = (balance / 100) * ((decimal)taxaJuros);
 
-            Console.WriteLine(juros);
-
-            return 0;
-            //throw new NotImplementedException("Please implement the (static) SavingsAccount.Interest() method");
+            return juros;
         }
 
         public static decimal AnnualBalanceUpdate(decimal balance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.AnnualBalanceUpdate() method");
+            return balance + Interest(balance);
         }
 
         public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.YearsBeforeDesiredBalance() method");
+            int anos = 0;
+
+            do
+            {
+                anos++;
+                balance = AnnualBalanceUpdate(balance);
+            } while (balance < targetBalance);
+
+            return anos;
         }
     }
 }

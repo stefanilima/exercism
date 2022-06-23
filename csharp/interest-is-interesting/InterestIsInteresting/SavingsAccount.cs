@@ -13,7 +13,13 @@ namespace InterestIsInteresting
 
         public static decimal Interest(decimal balance)
         {
-            throw new NotImplementedException("Please implement the (static) SavingsAccount.Interest() method");
+            var taxaJuros = InterestRate(balance);
+            decimal juros = (balance / 100) * ((decimal)taxaJuros);
+
+            Console.WriteLine(juros);
+
+            return 0;
+            //throw new NotImplementedException("Please implement the (static) SavingsAccount.Interest() method");
         }
 
         public static decimal AnnualBalanceUpdate(decimal balance)

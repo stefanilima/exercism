@@ -1,0 +1,21 @@
+name: CSharp Tests
+run-name: ${{ github.actor }} - Tests CSharp 🚀
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install dependencies
+        run: for i in $(ls -d csharp/*/); do dotnet restore $i; done;
+      - name: Build
+        run: for i in $(ls -d csharp/*/); do dotnet build --configuration Release --no-restore $i; done;
+      - name: Test
+        run: for i in $(ls -d csharp/*/); do dotnet test --no-restore --verbosity normal $i; done;

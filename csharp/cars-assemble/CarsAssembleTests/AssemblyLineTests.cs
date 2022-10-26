@@ -99,7 +99,7 @@ namespace CarsAssembleTests
         [Fact]
         public void WorkingItemsPerMinuteWithSpeedTen()
         {
-            Assert.Equal(28, AssemblyLine.WorkingItemsPerMinute(10));
+            Assert.Equal(11128, AssemblyLine.WorkingItemsPerMinute(10));
         }
     }
 }

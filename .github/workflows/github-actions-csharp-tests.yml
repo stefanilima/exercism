@@ -14,4 +14,4 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Test
-        run: for i in $(ls -d csharp/*/); do dotnet test --no-restore --verbosity normal $i; done;
+        run: for i in $(ls -d csharp/*/*/*.csproj); do dotnet test --no-restore --verbosity normal $i; done;

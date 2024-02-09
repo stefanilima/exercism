@@ -8,6 +8,7 @@ My solution to the Little Sister's Vocabulary exercise.
 
 ### Run the tests
 
+`pytest little-sisters-vocab/strings_test.py`
 
 ## Instructions
 
